@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata minClientVersion="3.2">
+        <id>SFHelper</id>
+        <version>0.0.1</version>
+        <authors>Gianluca Bertelli</authors>
+        <description>Helper classes to read the cluster manifest, the reverse proxy settings, the service configuration etc..</description>
+        <dependencies>
+          <dependency id="Microsoft.ServiceFabric" version="5.5.216" />
+        </dependencies>
+        <tags>Service Fabric ServiceFabric</tags>
+    </metadata>
+    <files>
+        <file src="..\bin\Release\SFHelper.*" target="lib\net452" />
+    </files>
+</package>
