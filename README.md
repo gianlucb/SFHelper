@@ -1,14 +1,14 @@
 # Service Fabric Helper
 Service Fabric helper classes to read the cluster manifest, the reverse proxy settings, the service configuration etc..
 
-#Cluster Manifest
+## Cluster Manifest
 
 ```csharp
     var currentNodeType = ClusterManifest.Instance.CurrentNodeType;
     var nodeTypes = ClusterManifest.Instance.NodeTypes;
 ```
 
-#Reverse Proxy
+## Reverse Proxy
 
 ```csharp
    var url = ReverseProxyResolver.GetReverseProxyListeningUrl("localhost");
@@ -17,7 +17,7 @@ Service Fabric helper classes to read the cluster manifest, the reverse proxy se
    var port2 = ReverseProxyResolver.GetReverseProxyPort(nodeTypes.Last());
 ```
 
-#Service Configuration
+## Service Configuration
 
 ```csharp
     var parameter = this.Context.Config("MyConfigSection").Parameters["MyParameter"].Value;
